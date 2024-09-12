@@ -39,12 +39,21 @@
 //     console.log('hiiii')
 // }
 // console.log(sum(5+4));
-let arr=[1,2,3,4,5,6,7,8]
-for (let i of arr){
-    console.log(i)
-}
+// let arr=[1,2,3,4,5,6,7,8]
+// for (let i of arr){
+//     console.log(i)
+// }
 
-for (let i in arr){
-    console.log(i)
+// for (let i in arr){
+//     console.log(i)
+// }
+function sum(a){
+    console.log(` ${a.name}     ${a.lastName}`);
 }
+let obj={
+    id:2,
+    name:"riya",
+    lastName:"jain"
+}
+sum(obj)
 
