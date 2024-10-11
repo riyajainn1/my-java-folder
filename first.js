@@ -147,43 +147,109 @@
 
 
 
-function step1(fn){
-    setTimeout(()=>{
-        console.log('select photo')
-fn()
-    },4000)
+// function step1(fn){
+//     setTimeout(()=>{
+//         console.log('select photo')
+// fn()
+//     },4000)
    
 
-}
-function step2(fn){
-    setTimeout(()=>{
-        console.log('filter')
-fn()
-    },2000)
+// }
+// function step2(fn){
+//     setTimeout(()=>{
+//         console.log('filter')
+// fn()
+//     },2000)
    
 
-}
-function step3(fn){
-    setTimeout(()=>{
-        console.log('caption')
-fn()
-    },3000)
+// }
+// function step3(fn){
+//     setTimeout(()=>{
+//         console.log('caption')
+// fn()
+//     },3000)
    
 
-}
-function step4(){
-    setTimeout(()=>{
-        console.log('post')
+// }
+// function step4(){
+//     setTimeout(()=>{
+//         console.log('post')
         
 
-    },1000)
+//     },1000)
    
 
-}
-step1(function(){
-    step2(function(){
-        step3(function(){
-            step4()
-        })
-    })
-})
+// }
+// step1(function(){
+//     step2(function(){
+//         step3(function(){
+//             step4()
+//         })
+//     })
+// })
+
+
+
+
+
+
+// let promise=  new Promise((res,rej)=>{
+//     let barish=false
+//     setTimeout(()=>{
+//         if (barish){
+//             rej('barish to nhi aana')
+//         }
+//         else{
+//             res('aana pdega')
+//         }
+//     },2000)
+// })
+// promise.then((data)=>{
+//     console.log(data)
+// })
+// .catch((err)=>{
+//     console.log(err)
+// })
+
+// 
+
+
+
+// let h2=  document.querySelectorAll('h2')
+// for(let i of h2){
+//     i.style.color='red'
+// }
+
+
+let a= document.querySelector('a')
+
+console.log(a.getAttribute('href'))
+a.setAttribute('href','http//flipkart.com')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
