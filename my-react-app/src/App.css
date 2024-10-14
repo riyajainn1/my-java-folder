@@ -46,15 +46,18 @@
 nav{
   display: flex;
   justify-content: space-between;
+  /* color: white; */
+  background-color: rgb(229, 32, 32);
+
 
 }
 li{
   display: flex;
-  justify-content: space between;
+  justify-content: space space-around;
   margin: 20px;
   height: 50px;
-  color: white;
-  background-color: black;
+  color: black;
+  /* background-color: black; */
   align-items: center;
 
 }

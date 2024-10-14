@@ -187,13 +187,143 @@
 //   )
 // }
 
+// import React from 'react'
+
+// import Home from './Home'
+// import Navbar from './Navbar'
+// import About from './About'
+// import Contact from './Contact'
+// import Login from './Login'
+// import './App.css'
+
+// import { Route,Routes } from 'react-router-dom'
+// const App = () => {
+//   return (
+//     <div>
+//         <Navbar/>
+        
+//             <Routes>
+//                 <Route path='/' element={<Home/>}/>
+//                 <Route path='/About' element={<About/>}/>
+//                 <Route path='/Contact' element={<Contact/>}/>
+//                 <Route path='/Login' element={<Login/>}/>
+
+//             </Routes>
+
+        
+    
+//     </div>
+//   )
+// }
+// export default App
+
+
+// import React from 'react'
+// import Home from './Home'
+// const App = () => {
+//   return (
+//     <div>
+//       <Home/>
+//     </div>
+//   )
+// }
+
+// export default App
+ 
+// count increase decrease by usereducer
+
+
+
+// import React, { useReducer } from 'react'
+
+
+// const App = () => {
+//   function reduser(count,action){
+//    if(action.type==='incre'){
+//     return count+=1
+//    }
+//    else if(action.type==='decre'){
+//     return count-=1
+//    }
+//    else if(action.type==='reset'){
+//     return 0
+//    }
+//    else{
+//     return count
+//    }
+//   }
+//   let [count,dispatch]=useReducer(reduser,0)
+//   return (
+//     <div>
+//       <h2>{count}</h2>
+//       <button onClick={()=>{dispatch({type:"incre"})}}>++</button>
+//       <button onClick={()=>{dispatch({type:"decre"})}}>--</button>
+//       <button onClick={()=>{dispatch({type:"reset"})}}>reset</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+// COLOR CHANGE BUTTON BY USEREDUCER
+
+// import React, { useReducer } from 'react'
+
+
+// const App = () => {
+//   function reduser(color,action){
+//    if(action.type==='red'){
+//     return color='red'
+//    }
+//    else if(action.type==='blue'){
+//     return color='blue'
+//    }
+//    else if(action.type==='green'){
+//     return color='green'
+//    }
+//    else if(action.type==='chocolate'){
+//     return color='chocolate'
+//    }
+//    else{
+//     return color
+//    }
+//   }
+//   let [color,dispatch]=useReducer(reduser,'white')
+//   return (
+//     <div style={{backgroundColor:color,height:'400px'}}>
+//       {/* <h2>{color}</h2> */}
+//       <button onClick={()=>dispatch({type:"red"})}>red</button>
+//       <button onClick={()=>dispatch({type:"blue"})}>blue</button>
+//       <button onClick={()=>dispatch({type:"green"})}>green</button>
+//       <button onClick={()=>dispatch({type:"chocolate"})}>chocolate</button>
+//     </div>
+//   )
+// }
+
+// export default App 
+
+
+
+
+// import React from 'react'
+// import Navbar from ./Navbar
+
+// const App = () => {
+//   return (
+//     <div>
+      
+//     </div>
+//   )
+// }
+
 import React from 'react'
 
 import Home from './Home'
 import Navbar from './Navbar'
 import About from './About'
-import Contact from './Contact'
+// import Contact from './Contact'
 import Login from './Login'
+import Cart from './Cart'
 import './App.css'
 
 import { Route,Routes } from 'react-router-dom'
@@ -205,10 +335,13 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/About' element={<About/>}/>
-                <Route path='/Contact' element={<Contact/>}/>
+                {/* <Route path='/Contact' element={<Contact/>}/> */}
                 <Route path='/Login' element={<Login/>}/>
+                <Route path='/Cart' element={<Cart/>}/>
 
             </Routes>
+
+        
 
         
     
@@ -216,3 +349,4 @@ const App = () => {
   )
 }
 export default App
+

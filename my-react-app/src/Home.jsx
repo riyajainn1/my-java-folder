@@ -12,11 +12,12 @@
 
 // export default Home
 import React from 'react'
+import M from './M'
 
 const Home = () => {
   return (
     <div>
-      homepage
+      <M/>
     </div>
   )
 }
